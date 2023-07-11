@@ -1,0 +1,50 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas de Cocina</title>
+    <link rel="stylesheet" href="{% static './CSS/estilo.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=MonteCarlo&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+    <main>
+		<div class="form-padre">
+		<div class="formulario-container">
+			<form>
+				<label for="name">Nombre:</label><br>
+				<input type="text" id="name" required> <br><br>
+			  
+				<label for="email">Email:</label> <br>
+				<input type="email" id="email"required><br><br>
+
+				<select>
+					<option selected>Seleccione tipo de receta</option>
+					<option value="1">Salada</option>
+					<option value="2">Dulce</option>
+				  </select><br><br>
+			  
+				<label for="message">Mensaje:</label><br>
+				<textarea id="message" size="300px"></textarea><br>
+			  
+				<button type="submit">Enviar</button>
+			  </form>
+
+</div>
+</div>
+<br>
+
+</main>
+<footer>
+</footer>
+{% endblock %}
+<!-- <script src="./static/js/script.js"></script> -->
+</body>
+</html>

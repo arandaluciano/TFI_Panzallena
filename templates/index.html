@@ -1,0 +1,70 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas de Cocina</title>
+  <link rel="stylesheet" href="{% static './CSS/estilo.css' %}">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lilita+One&family=MonteCarlo&family=Montserrat:wght@100&display=swap"
+    rel="stylesheet">
+  <script src="https://kit.fontawesome.com/d673becc44.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+  <main>
+    <section>
+      <h2>¡Estás a un paso de cocinar las mejores recetas!</h2>
+      <p>En este sitio encontrarás una selección de <span style="color: rgb(219, 132, 0);">recetas deliciosas</span> y
+        fáciles de preparar para toda la familia.
+        Explora nuestras secciones para descubrir nuevas ideas para tus comidas y postres favoritos. Comer no es una
+        ciencia difícil, animate a descubrir el cocinero o la cocinera que tienes dentro tuyo. También recordá que su
+        consulta no molesta. Escribinos a través de nuestro contacto y te responderemos lo más pronto posible. </p>
+      <br>
+      <section>
+        <h2> <i>🔥Nuestras recetas más populares🔥</i></h2>
+        <br>
+        <div class="form-padre">
+          <div class="grid-item">
+            <a href="https://www.recetasgratis.net/receta-de-sandwich-de-bondiola-de-cerdo-76700.html"><img
+                src="https://cdn0.recetasgratis.net/es/posts/0/0/7/sandwich_de_bondiola_de_cerdo_76700_300_square.webp"
+                alt="Imagen del producto 1" class="img-item">
+              <span class="titulo-item">Receta de Sándwich de bondiola de cerdo</span></a>
+          </div>
+        
+          <div class="grid-item">
+            <a href="https://www.recetasgratis.net/receta-de-tortas-fritas-con-leche-76675.html"><img
+                src="https://cdn0.recetasgratis.net/es/posts/5/7/6/tortas_fritas_con_leche_76675_300_square.webp"
+                alt="Imagen del producto 3" class="img-item">
+              <span class="titulo-item">Receta de Tortas fritas con leche</span></a>
+          </div>
+
+        <div class="grid-item">
+          <a href="https://www.recetasgratis.net/receta-de-tarta-de-queso-y-yogur-griego-76666.html"><img
+              src="https://cdn0.recetasgratis.net/es/posts/6/6/6/tarta_de_queso_y_yogur_griego_76666_558_288.webp"
+              alt="Imagen del producto 3" class="img-item">
+            <span class="titulo-item">Receta de Tarta de queso y yogur griego</span></a>
+        </div>
+        
+        
+      </div>
+      </section>
+    </section>
+  </main>
+
+  <footer>
+
+  </footer>
+{% endblock %}
+  <!-- <script src="./static/js/script.js"></script> -->
+</body>
+
+</html>

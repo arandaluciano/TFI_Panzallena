@@ -1,0 +1,55 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetas de Cocina</title>
+    <link rel="stylesheet" href="{% static './CSS/estilo.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=MonteCarlo&family=Montserrat:wght@100&display=swap" rel="stylesheet">
+</head>
+<body>
+	
+    <main>
+        <br>
+        <section>
+            <div class="buscador-contenedor">
+                <h1 class="headName">Encontrá tu receta por ingrediente:</h1>
+                <br>
+                <form action="" class="form-padre" style="position: static;">
+                    <div class="buscador-barra">
+                        <input type="text" id="inputName" class="form-control" placeholder="Buscá tu ingrediente...(en inglés)" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button type="button" id="button">Buscar</button>
+                        <br>
+                      </div>
+                </form>
+        
+                <div id="msg">
+                    <h3>No encontramos esta receta, lo sentimos! Puede haber otras interesantes 🥰</h3>
+                </div>
+        
+                <div id="details" >
+        
+                </div>
+        
+                <div id="items">
+        
+                </div>
+        
+            </div>
+      </section>
+    </main>
+<footer>
+    
+</footer>
+
+<!-- <script src="./static/js/script.js"></script> -->
+<script src="{% static './js/api.js' %}"></script>
+{% endblock %}
+</body>
+</html>

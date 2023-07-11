@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recetas de Cocina</title>
+    <link rel="stylesheet" href="{% static './CSS/estilo.css' %}">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&family=MonteCarlo&family=Montserrat:wght@100&display=swap"
+      rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d673becc44.js" crossorigin="anonymous"></script>
+</head>
+<body><header>
+    <h1 class='visor_imagenes'>Panza Llena = Corazón Contento</h1>
+        
+        <nav>
+
+       
+        <input type="checkbox" id="check">
+        <label for ="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+            <ul>
+                <li><a href="{% url 'index' %}">Inicio</a></li>
+                 <li><a href="{% url 'recetas' %}">Recetas</a></li>
+                <li><a href="{% url 'about' %}">Sobre nosotros</a></li>
+                <li><a href="{% url 'contacto' %}">Contacto</a></li>
+                               
+            </ul>
+        </nav>
+    </header>
+    
+{% block content %}
+{% endblock %}
+
+    <footer>
+        <div class="social">
+            <ul class="social-icons">
+                  <li>Siguenos en:</li>
+                    <li><a href="https://www.instagram.com"><i class="fab fa-instagram" style="color: #ffffff;"></i></a></li>
+                  <li><a href="https://www.facebook.com"><i class="fab fa-facebook" style="color: #ffffff;"></i></a></li>
+                  <li><a href="mailto:contacto@recetasjuntos.com.ar"><i class="fa-solid fa-envelope" style="color: #ffffff;"></i></a></li>
+              </ul>
+          </div>
+        <p>Derechos reservados &copy; 2023 Recetas de Cocina</p>`
+    </footer>
+
+
+</body>
+</html>
